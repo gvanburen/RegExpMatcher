@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+}
+
+.myContent {
+  height: 300px;
+}
+
+.regStart, .flagStart {
+  position: relative;
+  display:inline;
+}
+
+.regStart:before, .flagStart:before {
+  content: '/';
+  top: 0;
+  left: 5px;
+  position: absolute;
+}
+
+textarea {
+  min-height: 50vh;
+  resize: vertical;
+}
+
+.results {
+  padding: 5px;
+  min-height: 300px;
+  height: 100%;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+}
+
+.found {
+  color: #5a8dd1;
+}

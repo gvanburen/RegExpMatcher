@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="mainCtrl">
+  <head>
+    <meta charset="utf-8">
+    <title>RegExp Matcher Application</title>
+      <link rel="stylesheet" href="css/normalize.css" charset="utf-8">
+      <link rel="stylesheet" href="css/skeleton.css" charset="utf-8">
+      <link rel="stylesheet" href="css/style.css" charset="utf-8">
+  </head>
+  <body>
+    <section class="container">
+      <div class="row">
+        <section class="u-full-width">
+          <h1 class="title">Regular Expression Matcher</h1>
+        </section>
+      </div>
+      <div class="row myContent">
+        <section class="six columns">
+          <form>
+            <div class="row">
+              <section class="ten columns">
+                <label for="userRegExp">RegExp</label>
+                <div class="regStart">
+                  <input type="text" class="u-full-width" id="userRegExp" ng-model="userRegExp" value="[A-Z]\w+">
+                </div>
+              </section>
+              <section class="two columns">
+                <label for="userFlag">Flag</label>
+                <div class="flagStart">
+                  <input type="text" class="u-full-width" id="userFlag" ng-model="userFlag" value="g">
+                </div>
+              </section>
+            </div>
+            <section class="twelve columns">
+              <label for="userText">Text</label>
+              <textarea id="userText" class="u-full-width" ng-model="userText"></textarea>
+            </section>
+          </form>
+        </section>
+        <section class="six columns">
+          <label>Here's what I found:</label>
+          <section class="results">
+            <h6 ng-bind-html="regCheck()"></h6>
+          </section>
+        </section>
+      </div>
+    </section>
+
+
+    <script src="./bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="./bower_components/angular-sanitize/angular-sanitize.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
