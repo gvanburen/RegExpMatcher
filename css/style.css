@@ -1,9 +1,15 @@
+html {
+  background-color: #D1D1D1;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .title {
   text-align: center;
 }
 
-.myContent {
-  height: 300px;
+.content {
+  padding: 1.5em 0;
+  height: 80vh;
 }
 
 .regStart, .flagStart {
@@ -13,24 +19,25 @@
 
 .regStart:before, .flagStart:before {
   content: '/';
-  top: 0;
+  top: -2px;
   left: 5px;
   position: absolute;
 }
 
 textarea {
-  min-height: 50vh;
-  resize: vertical;
+  min-height: 350px;
+  resize: none;
 }
 
 .results {
-  padding: 5px;
-  min-height: 300px;
+  padding: 8px;
+  min-height: 415px;
   height: 100%;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .found {
-  color: #5a8dd1;
+  color: #d15a5a;
 }
